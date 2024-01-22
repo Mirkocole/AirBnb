@@ -1,0 +1,26 @@
+nav img {
+    width: 120px;
+}
+
+nav {
+    border-bottom: 1px solid lightgray;
+}
+
+section .container {
+    position: relative;
+}
+
+section .container .right-item img {
+    width: 600px;
+    border-radius: 5%;
+}
+
+section .container .left-item {
+    width: 400px;
+    height: 300px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 8%;
+    border-radius: 5%;
+
+}
