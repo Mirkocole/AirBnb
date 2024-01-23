@@ -13,47 +13,153 @@
 
     <!-- NAVBAR -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets/logo-pink.png" alt="logo airbnb" class="img-fluid" id="logo_top">
             </a>
             <div class="d-flex align-items-center gap-4" id="right_navbar">
-                <div id="host_globe" class="d-flex align-items-center gap-4">
-                    <a href="#" style="text-decoration: none;">Become a host</a>
-                    <i class="fa-solid fa-globe"></i>
-                </div>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                
+
+                <div class="collapse navbar-collapse" >
                     <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <button class="btn d-flex align-items-center gap-3" data-bs-toggle="dropdown" aria-expanded="false" id="btn_account">
-                            <i class="fa-solid fa-bars"></i>
-                            <i class="fa-solid fa-circle-user"></i>
-                        </button>
-                        
-                        <ul class="dropdown-menu" id="menu_account">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
+                        <li class="nav-item dropdown d-flex gap-4">
+                            <div id="host_globe" class="d-flex align-items-center gap-4">
+                                <a href="#" style="text-decoration: none;">Become a host</a>
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <button class="btn d-flex align-items-center gap-3" data-bs-toggle="dropdown" aria-expanded="false" id="btn_account">
+                                <i class="fa-solid fa-bars"></i>
+                                <i class="fa-solid fa-circle-user"></i>
+                            </button>
+                            
+                            <ul class="dropdown-menu" id="menu_account">
+                            <li><a class="dropdown-item text-black fw-semibold" href="#">Sign up</a></li>
+                            <li><a class="dropdown-item" href="#">Log in</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+                            <li><a class="dropdown-item" href="#">Airbnb your home</a></li>
+                            <li><a class="dropdown-item" href="#">Help center</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="collapse navbar-collapse dropstart" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav dropdown-menu d-md-none" id="menu_collapse_sm">
+                        <li><a class="dropdown-item text-black fw-semibold" href="#">Sign up</a></li>
+                        <li><a class="dropdown-item" href="#">Log in</a></li>
+                        <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+                        <li><a class="dropdown-item" href="#">Airbnb your home</a></li>
+                        <li><a class="dropdown-item" href="#">Help center</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-      </nav>
+    </nav>
 
 
 
 
 
+    <!-- FOOTER -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3>Inspiration for future getaways</h3>
+            </div>
+
+            <div class="row d-flex">
+                <div class="col">
+                    <a href="#">Popular</a>
+                    <a href="#">Arts & culture</a>
+                    <a href="#">Outdoors</a>
+                    <a href="#">Mountains</a>
+                    <a href="#">Beach</a>
+                    <a href="#">Unique stays</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Things to do</a>
+                    <a href="#">Airbnb-friendly apartments</a>
+                </div>
+            </div>
+
+            <div class="row d-flex">
+                <div class="col">
+                    <h5>Support</h5>
+                    <a href="#">Help Center</a>
+                    <a href="#">AirCover</a>
+                    <a href="#">Anti-discrimination</a>
+                    <a href="#">Disability support</a>
+                    <a href="#">Cancellation options</a>
+                    <a href="#">Report neighborhood concern</a>
+                </div>
+
+                <div class="col">
+                    <h5>Hosting</h5>
+                    <a href="#">Airbnb your home</a>
+                    <a href="#">AirCover for Hosts</a>
+                    <a href="#">Hosting resources</a>
+                    <a href="#">Community forum</a>
+                    <a href="#">Hosting responsibly</a>
+                    <a href="#">Airbnb-friendly apartments</a>
+                </div>
+
+                <div class="col">
+                    <h5>Airbnb</h5>
+                    <a href="#">Newsroom</a>
+                    <a href="#">New features</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Investors</a>
+                    <a href="#">Gift cards</a>
+                    <a href="#">Airbnb.org emergency stays</a>
+                </div>
 
 
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            </div>
+
+            <div class="row d-flex">
+                <div class="col d-flex">
+                    <p>© 2024 Airbnb, Inc.</p>
+                    <p>•</p>
+                    <a href="#">Terms</a>
+                    <p>•</p>
+                    <a href="#">Sitemap</a>
+                    <p>•</p>
+                    <a href="#">Privacy</a>
+                    <p>•</p>
+                    <a href="#">Your Privacy Choices</a>
+                </div>
+
+                <div class="col">
+                    <a href="#">
+                        <i class="fa-solid fa-globe"></i>
+                        English(US)
+                    </a>
+                    <a href="#">
+                        € EUR
+                    </a>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     
