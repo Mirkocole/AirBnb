@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+.favorites-icon{
+    z-index: 9;
+    top: 9%;
+    right: 7%;
+    font-size: 20px;
+}
+
+.favorites-text{
+    z-index: 9;
+    font-size: 0.7em;
+    top: 7%;
+    left: 7%;
+    padding: 5px 10px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 40px;
+    color: black;
+}
+
+.description-room{
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.carousel-item img{
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+@media (min-width: 1200px) {
+    
+    #container-card > div{
+        width: 20%!important;
+    }
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#logo_top{
+    height: 40px;
+    width: auto;
+}
+
+#host_globe a,
+#host_globe i{
+    font-size: 12px;
+    color: black;
+}
+
+#btn_account{
+    color: #696969;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #696969;
+    border-radius: 17px;
+}
+
+#btn_account i:last-child{
+    font-size: 22px;
+}
+
+#btn_account i:first-child{
+    font-size: 12px;
+}
+
+#menu_account{
+    transform: translateX(-148px);
+}
+
