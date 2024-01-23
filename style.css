@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav img {
+    width: 120px;
+}
+
+nav {
+    border-bottom: 1px solid lightgray;
+}
+
+section {
+    min-height: 600px;
+}
+
+section .container {
+    position: relative;
+}
+
+section .container .right-item img {
+    width: 700px;
+    height: 480px;
+    border-radius: 5%;
+    position: absolute;
+    right: 23%;
+}
+
+section .container .left-item {
+    width: 450px;
+    height: 420px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 5vh;
+    border-radius: 5%;
+    z-index: 2;
+}
+
+.bar {
+    width: 360px;
+    background: white;
+    box-shadow: 0 0 5px hsl(0 0% 78%);
+    height: 50px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+}
+
+.bar:hover {
+    box-shadow: 0 0 5px hsl(0, 0%, 0%);
+}
+
+.location {
+    width: 34%;
+}
+
+.bar .location input {
+    border: transparent;
+}
+
+.bar {
+    position: relative;
+}
+
+
+.bar .location {
+    position: absolute;
+    content: "";
+    left: 10%;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.bar .check-in {
+    border-right: 1px solid lightgray;
+}
+
+.bar .check-out {
+    position: absolute;
+    left: 55%;
+}
+
+.left-item .search-btn button {
+    border: 1px solid white;
+    width: 87%;
+    background-color: #DB0D64;
+    height: 50px;
+    border-radius: 10px;
+}
+
+main .container i {
+    font-size: 25px;
+}
