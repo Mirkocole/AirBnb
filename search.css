@@ -21,6 +21,10 @@
 
 #btn_account{
     color: #696969;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #696969;
+    border-radius: 17px;
 }
 
 #btn_account i:last-child{
