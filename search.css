@@ -38,9 +38,7 @@ div.carousel-item img{
     object-fit: cover;
 }
 
-/* #container-card > div{
-    min-width: 250px!important;
-} */
+
 
 @media (min-width: 1200px) {
     

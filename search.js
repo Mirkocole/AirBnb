@@ -82,7 +82,63 @@ const rooms = [
         date: '02 - 07 feb',
         attribute: 'Host professionista',
         price: '441',
+        highlight:''
+    },
+    {
+        urlImages: [
+            'https://a0.muscache.com/im/pictures/b7c9264d-73c9-45c3-882e-6e9577d63d68.jpg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/062ef52a-9b4f-4301-9413-e757d1758b3f.jpg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/e922f0c3-9a3d-4877-983a-56849ce92e18.jpg?im_w=720'
+        ],
+        location: "Drimnin, Regno Unito",
+        feedback: '5,0',
+        description1: 'Host privato',
+        date: '07 - 12 ott',
+        attribute: '',
+        price: '233',
         highlight:'Amato dagli ospiti'
+    },
+    {
+        urlImages: [
+            'https://a0.muscache.com/im/pictures/9e10ac8b-903d-4e54-9a23-74935f14b4a6.jpg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/miso/Hosting-32033186/original/e21308fd-1c4b-4099-afed-af2de2e4c31b.jpeg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/miso/Hosting-32033186/original/910a22c3-442d-4afe-8f1b-4d16fbec9095.jpeg?im_w=720'
+        ],
+        location: "Joncherei, Francia",
+        feedback: '4,88',
+        description1: 'Host professionista',
+        date: '07 - 12 apr',
+        attribute: '',
+        price: '365',
+        highlight:'Amato dagli ospiti'
+    },
+    {
+        urlImages: [
+            'https://a0.muscache.com/im/pictures/eb9b2035-139a-47d2-b4ed-55c4e939d12c.jpg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/0f8c5262-c281-4e31-916a-e792f6250b3c.jpg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/miso/Hosting-43578924/original/e8277876-88f3-4a07-84ba-f3dbf2787f5e.jpeg?im_w=720'
+        ],
+        location: "Zoagli, Italia",
+        feedback: '4,88',
+        description1: 'Host privato',
+        date: '01 - 06 feb',
+        attribute: '',
+        price: '136',
+        highlight:''
+    },
+    {
+        urlImages: [
+            'https://a0.muscache.com/im/pictures/prohost-api/Hosting-576057828363621171/original/59b6561e-d120-4670-9d6d-303746bc180d.jpeg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/prohost-api/Hosting-576057828363621171/original/4f7c1658-39a7-4228-84b2-ed921eac1e80.jpeg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/prohost-api/Hosting-576057828363621171/original/5072e090-2015-48e5-85f5-22e44cb0edb4.jpeg?im_w=720'
+        ],
+        location: "Riva, Italia",
+        feedback: '4,88',
+        description1: 'Host professionista',
+        date: '01 - 06 feb',
+        attribute: '',
+        price: '2.900',
+        highlight:''
     },
 ];
 
