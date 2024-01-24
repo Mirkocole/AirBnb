@@ -6,7 +6,9 @@
     font-family: "Montserrat", sans-serif;
 }
 
-
+.text-grey{
+    color: #696969;
+}
 
 .favorites-icon{
     z-index: 9;
@@ -40,7 +42,7 @@ div.carousel-item img{
 
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1475px) {
     
     #container-card > div{
         width: 20%!important;
@@ -49,12 +51,6 @@ div.carousel-item img{
 
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
 
 #logo_top{
     height: 40px;
@@ -87,3 +83,55 @@ div.carousel-item img{
     transform: translateX(-148px);
 }
 
+
+
+/* Restyle modale */
+.form-select,.form-control{
+    border: none!important;
+}
+
+.form-select:active,.form-select:focus,.form-control:active,.form-control:focus{
+    border: none!important;
+    box-shadow: none!important;
+}
+
+div.modal-body label{
+    font-size: 11px;
+}
+
+#avvisoModale{
+    font-size: 11px;
+}
+
+div.d-grid span{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+div.modal-body button{
+    font-size: 14px;
+    padding: 14px 0px!important;
+}
+
+#continue-button{
+    margin-top: 20px!important;
+    font-weight: 500;
+    background: linear-gradient(144deg, rgba(230,29,77,1) 10%, rgba(215,9,102,1) 100%)!important;
+
+}
+
+#modalTitle{
+    font-size: 14px!important;
+}
+
+.btn-close{
+    background-size: 11px;
+}
+
+@media (min-width:992px){
+
+    div.modal-dialog{
+        width: 100%!important;
+        max-width: 568px!important;
+    }
+}

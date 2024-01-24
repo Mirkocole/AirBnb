@@ -119,7 +119,7 @@ const rooms = [
             'https://a0.muscache.com/im/pictures/miso/Hosting-43578924/original/e8277876-88f3-4a07-84ba-f3dbf2787f5e.jpeg?im_w=720'
         ],
         location: "Zoagli, Italia",
-        feedback: '4,88',
+        feedback: '4,78',
         description1: 'Host privato',
         date: '01 - 06 feb',
         attribute: '',
@@ -133,11 +133,81 @@ const rooms = [
             'https://a0.muscache.com/im/pictures/prohost-api/Hosting-576057828363621171/original/5072e090-2015-48e5-85f5-22e44cb0edb4.jpeg?im_w=720'
         ],
         location: "Riva, Italia",
-        feedback: '4,88',
+        feedback: '4,64',
         description1: 'Host professionista',
         date: '01 - 06 feb',
         attribute: '',
         price: '2.900',
+        highlight:''
+    },
+    {
+        urlImages: [
+            'https://a0.muscache.com/im/pictures/88f04a14-aca8-48ca-b602-1aa53fd4a20d.jpg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/f5922ae2-1941-4991-8fc1-80b816836c63.jpg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/eadb76cb-6eba-4171-99ce-1f077daf1261.jpg?im_w=720'
+        ],
+        location: "Zermatt, Svizzera",
+        feedback: '4,99',
+        description1: 'Host professionista',
+        date: '04 - 11 feb',
+        attribute: '',
+        price: '9.061',
+        highlight:'Amato dalgli ospiti'
+    },
+    {
+        urlImages: [
+            'https://a0.muscache.com/im/pictures/295d536e-95a1-4df3-a01e-7098590f1a2f.jpg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/f7a53928-0b01-4efe-9407-bee0e7da68fa.jpg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/0035d9a1-afec-4a52-a28c-88679bac593c.jpg?im_w=720'
+        ],
+        location: "Santorini, Grecia",
+        feedback: '5,0',
+        description1: 'Host professionista',
+        date: '01 - 06 feb',
+        attribute: '',
+        price: '118',
+        highlight:'Amato dalgli ospiti'
+    },
+    {
+        urlImages: [
+            'https://a0.muscache.com/im/pictures/a63597b3-24d7-46de-a482-463c7802f1d4.jpg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/dab81bf7-bf0f-4066-b51c-a3806f3ff03e.jpg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/681e72a1-0915-4d9f-a5a6-41d3ee1cb05a.jpg?im_w=720'
+        ],
+        location: "Trostberg, Germania",
+        feedback: '5,0',
+        description1: 'Host professionista',
+        date: '28 mar - 02 apr',
+        attribute: '',
+        price: '217',
+        highlight:''
+    },
+    {
+        urlImages: [
+            'https://a0.muscache.com/im/pictures/prohost-api/Hosting-49706308/original/1be7cc9f-6544-4901-913d-936542aa5363.jpeg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/prohost-api/Hosting-49706308/original/f0ffe4a3-5ec5-4246-8537-77319a6eb65e.jpeg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/prohost-api/Hosting-49706308/original/86d123fd-6e60-4163-9680-4dee1f732243.jpeg?im_w=720'
+        ],
+        location: "Kalispell, Montana, Stati Uniti",
+        feedback: '5,0',
+        description1: 'Host professionista',
+        date: '01 - 06 feb',
+        attribute: '',
+        price: '175',
+        highlight:'Amato dagli ospiti'
+    },
+    {
+        urlImages: [
+            'https://a0.muscache.com/im/pictures/miso/Hosting-37139014/original/d6e7e5da-55ee-43b9-9fee-859a3ea11c32.jpeg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/miso/Hosting-37139014/original/05a0edf2-b262-4d5c-baef-0d763e962abc.jpeg?im_w=720', 
+            'https://a0.muscache.com/im/pictures/4a1d555d-fdf3-44fc-a69a-828177bc19d0.jpg?im_w=720'
+        ],
+        location: "Korsvegen, Norvegia",
+        feedback: '4,92',
+        description1: 'Host professionista',
+        date: '05 - 10 feb',
+        attribute: '',
+        price: '123',
         highlight:''
     },
 ];
@@ -149,7 +219,7 @@ let container = document.getElementById('container-card');
 
 for (let i = 0;i<rooms.length;i++) {
     let div = document.createElement('div');
-    div.classList = ['col-6 col-md-4 col-lg-3 col-xl-2'];
+    div.classList = ['col-6 col-md-4 col-xl-3 '];
     div.innerHTML =`
     <div id="carousel${i}" class="carousel slide">
         <div class="carousel-indicators">
@@ -194,10 +264,10 @@ for (let i = 0;i<rooms.length;i++) {
             <span class="col-auto description-room"><i class="fa-solid fa-star"></i> ${rooms[i].feedback}</span>
         </div>
         <div class="row">
-            <span class="description-room fw-light">${rooms[i].description1}</span>
+            <span class="description-room fw-light text-grey">${rooms[i].description1}</span>
         </div>
         <div class="row">
-            <span class="description-room fw-light">${rooms[i].date} • ${rooms[i].attribute}</span>
+            <span class="description-room fw-light text-grey">${rooms[i].date} • ${rooms[i].attribute}</span>
         </div>
         <div class="row">
             <span class="description-room fw-bold mt-2">${rooms[i].price} € notte</span>
@@ -207,7 +277,7 @@ for (let i = 0;i<rooms.length;i++) {
 container.appendChild(div);
 if (rooms[i].highlight !== '') {
     let div2 = document.querySelector(`#carousel${i} div.col.highlight-card`);
-    div2.innerHTML=`<span class="favorites-text position-absolute">${rooms[i].highlight}</span>`;
+    div2.innerHTML=`<span class="favorites-text position-absolute fw-semibold">${rooms[i].highlight}</span>`;
 }
 
 }
