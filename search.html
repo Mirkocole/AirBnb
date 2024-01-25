@@ -14,11 +14,11 @@
     <!-- NAVBAR -->
 
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid" id="content_navbar">
             <a class="navbar-brand" href="#">
                 <img src="assets/logo-pink.png" alt="logo airbnb" class="img-fluid" id="logo_top">
             </a>
-            <div class="d-flex align-items-center gap-4" id="right_navbar">
+            <div class="d-flex align-items-center justify-content-end" id="right_navbar">
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -76,13 +76,13 @@
 
             <!-- HIGHLIGHTS -->
 
-            <div>
+            <div id="highlights">
                 <ul class="nav nav-underline" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <button class="nav-link active" id="popular-tab" data-bs-toggle="tab" data-bs-target="#popular-tab-pane" type="button" role="tab" aria-controls="popular-tab-pane" aria-selected="true">Popular</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="arts-tab" data-bs-toggle="tab" data-bs-target="#arts-tab-pane" type="button" role="tab" aria-controls="arts-tab-pane" aria-selected="false">Arts & culture</button>
+                      <button class="nav-link" id="arts-tab" data-bs-toggle="tab" data-bs-target="#arts-tab-pane" type="button" role="tab" aria-controls="arts-tab-pane" aria-selected="false" style="width: max-content;">Arts & culture</button>
                     </li>
                     <li class="nav-item" role="presentation">
                       <button class="nav-link" id="outdoors-tab" data-bs-toggle="tab" data-bs-target="#outdoors-tab-pane" type="button" role="tab" aria-controls="outdoors-tab-pane" aria-selected="false">Outdoors</button>
@@ -94,696 +94,717 @@
                         <button class="nav-link" id="beach-tab" data-bs-toggle="tab" data-bs-target="#beach-tab-pane" type="button" role="tab" aria-controls="beach-tab-pane" aria-selected="false">Beach</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="unique-tab" data-bs-toggle="tab" data-bs-target="#unique-tab-pane" type="button" role="tab" aria-controls="unique-tab-pane" aria-selected="false">Unique stays</button>
+                        <button class="nav-link" id="unique-tab" data-bs-toggle="tab" data-bs-target="#unique-tab-pane" type="button" role="tab" aria-controls="unique-tab-pane" aria-selected="false" style="width: max-content;">Unique stays</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="categories-tab" data-bs-toggle="tab" data-bs-target="#categories-tab-pane" type="button" role="tab" aria-controls="categories-tab-pane" aria-selected="false">Categories</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="things-tab" data-bs-toggle="tab" data-bs-target="#things-tab-pane" type="button" role="tab" aria-controls="things-tab-pane" aria-selected="false">Things to do</button>
+                        <button class="nav-link" id="things-tab" data-bs-toggle="tab" data-bs-target="#things-tab-pane" type="button" role="tab" aria-controls="things-tab-pane" aria-selected="false" style="width: max-content;">Things to do</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="friendly-tab" data-bs-toggle="tab" data-bs-target="#friendly-tab-pane" type="button" role="tab" aria-controls="tfriendly-tab-pane" aria-selected="false">Airbnb-friendly apartments</button>
+                        <button class="nav-link" id="friendly-tab" data-bs-toggle="tab" data-bs-target="#friendly-tab-pane" type="button" role="tab" aria-controls="tfriendly-tab-pane" aria-selected="false" style="width: max-content;">Airbnb-friendly apartments</button>
                     </li>
                     
                 </ul>
                 <hr>
-                <div class="tab-content row" id="myTabContent">
-                    <div class="tab-pane fade show active row d-flex flex-wrap gy-4" id="popular-tab-pane" role="tabpanel" aria-labelledby="popular-tab" tabindex="0">
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Canmore</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Benalmádena</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Marbella</p>
-                            <p>Villa rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Mijas</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Prescott</p>
-                            <p>Cabin rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Scottsdale</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Tucson</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Jasper</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Mountain View</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Devonport</p>
-                            <p>Cottage rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Mallacoota</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Ibiza</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Anaheim</p>
-                            <p>Family-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Monterey</p>
-                            <p>Bungalow rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Paso Robles</p>
-                            <p>Cottage rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Santa Barbara</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Sonoma</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">La Serena</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade row d-flex flex-wrap gy-4" id="arts-tab-pane" role="tabpanel" aria-labelledby="arts-tab" tabindex="0">
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Phoenix</p>
-                            <p>Villa rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Hot Springs</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Los Angeles</p>
-                            <p>Cottage rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">San Diego</p>
-                            <p>Rentals with pools</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">San Francisco</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Barcelona</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Prague</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Washington</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Keswick</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">London</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Scarborough</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Sherwood Forest</p>
-                            <p>Cabin rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">York</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Paris</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Rhodes</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Nashville</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Dublin</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Florence</p>
-                            <p>Apartment rentals</p>
+                <div class="tab-content row py-4" id="myTabContent">
+                    <div class="tab-pane fade show active" id="popular-tab-pane" role="tabpanel" aria-labelledby="popular-tab" tabindex="0">
+                        <div class="row d-flex flex-wrap gy-4">    
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Canmore</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Benalmádena</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Marbella</p>
+                                <p>Villa rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Mijas</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Prescott</p>
+                                <p>Cabin rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Scottsdale</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Tucson</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-6">
+                                <button id="show_more" class="text-black fw-semibold">Show More</button>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Jasper</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Mountain View</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Devonport</p>
+                                <p>Cottage rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Mallacoota</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Ibiza</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Anaheim</p>
+                                <p>Family-friendly rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Monterey</p>
+                                <p>Bungalow rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Paso Robles</p>
+                                <p>Cottage rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Santa Barbara</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">Sonoma</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="text-black fw-semibold">La Serena</p>
+                                <p>Vacation rentals</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade row d-flex flex-wrap gy-4" id="outdoors-tab-pane" role="tabpanel" aria-labelledby="outdoors-tab" tabindex="0">
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Lake Martin</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Banff</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Nerja</p>
-                            <p>Beach house rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Greer</p>
-                            <p>Cabin rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Lake Havasu City</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Lake Powell</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">North Rim</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Payson</p>
-                            <p>Cabin rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Pinetop-Lakeside</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Red Rock</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Dinner Plain</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Streaky Bay</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Emerald Lake</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Vancouver Island</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Victoria</p>
-                            <p>Beach house rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Idyllwild-Pine Cove</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Mammoth Lakes</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Palm Desert</p>
-                            <p>Villa rentals</p>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade row d-flex flex-wrap gy-4" id="mountains-tab-pane" role="tabpanel" aria-labelledby="mountains-tab" tabindex="0">
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Canmore</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Benalmádena</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Marbella</p>
-                            <p>Villa rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Mijas</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Prescott</p>
-                            <p>Cabin rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Scottsdale</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Tucson</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Jasper</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Mountain View</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Devonport</p>
-                            <p>Cottage rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Mallacoota</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Ibiza</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Anaheim</p>
-                            <p>Family-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Monterey</p>
-                            <p>Bungalow rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Paso Robles</p>
-                            <p>Cottage rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Santa Barbara</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Sonoma</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">La Serena</p>
-                            <p>Vacation rentals</p>
+                    <div class="tab-pane fade" id="arts-tab-pane" role="tabpanel" aria-labelledby="arts-tab" tabindex="0">
+                        <div class="row d-flex flex-wrap gy-4"> 
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Phoenix</p>
+                                <p>Villa rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Hot Springs</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Los Angeles</p>
+                                <p>Cottage rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">San Diego</p>
+                                <p>Rentals with pools</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">San Francisco</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Barcelona</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Prague</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Washington</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Keswick</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">London</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Scarborough</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Sherwood Forest</p>
+                                <p>Cabin rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">York</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Paris</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Rhodes</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Nashville</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Dublin</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Florence</p>
+                                <p>Apartment rentals</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade row d-flex flex-wrap gy-4" id="beach-tab-pane" role="tabpanel" aria-labelledby="beach-tab" tabindex="0">
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Phoenix</p>
-                            <p>Villa rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Hot Springs</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Los Angeles</p>
-                            <p>Cottage rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">San Diego</p>
-                            <p>Rentals with pools</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">San Francisco</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Barcelona</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Prague</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Washington</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Keswick</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">London</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Scarborough</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Sherwood Forest</p>
-                            <p>Cabin rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">York</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Paris</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Rhodes</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Nashville</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Dublin</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Florence</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade row d-flex flex-wrap gy-4" id="unique-tab-pane" role="tabpanel" aria-labelledby="unique-tab" tabindex="0">
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Lake Martin</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Banff</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Nerja</p>
-                            <p>Beach house rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Greer</p>
-                            <p>Cabin rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Lake Havasu City</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Lake Powell</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">North Rim</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Payson</p>
-                            <p>Cabin rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Pinetop-Lakeside</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Red Rock</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Dinner Plain</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Streaky Bay</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Emerald Lake</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Vancouver Island</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Victoria</p>
-                            <p>Beach house rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Idyllwild-Pine Cove</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Mammoth Lakes</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Palm Desert</p>
-                            <p>Villa rentals</p>
+                    <div class="tab-pane fade" id="outdoors-tab-pane" role="tabpanel" aria-labelledby="outdoors-tab" tabindex="0">
+                        <div class="row d-flex flex-wrap gy-4">
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Lake Martin</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Banff</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Nerja</p>
+                                <p>Beach house rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Greer</p>
+                                <p>Cabin rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Lake Havasu City</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Lake Powell</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">North Rim</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Payson</p>
+                                <p>Cabin rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Pinetop-Lakeside</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Red Rock</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Dinner Plain</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Streaky Bay</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Emerald Lake</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Vancouver Island</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Victoria</p>
+                                <p>Beach house rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Idyllwild-Pine Cove</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Mammoth Lakes</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Palm Desert</p>
+                                <p>Villa rentals</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade row d-flex flex-wrap gy-4" id="categories-tab-pane" role="tabpanel" aria-labelledby="categories-tab" tabindex="0">
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Canmore</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Benalmádena</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Marbella</p>
-                            <p>Villa rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Mijas</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Prescott</p>
-                            <p>Cabin rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Scottsdale</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Tucson</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Jasper</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Mountain View</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Devonport</p>
-                            <p>Cottage rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Mallacoota</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Ibiza</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Anaheim</p>
-                            <p>Family-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Monterey</p>
-                            <p>Bungalow rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Paso Robles</p>
-                            <p>Cottage rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Santa Barbara</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Sonoma</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">La Serena</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade row d-flex flex-wrap gy-4" id="things-tab-pane" role="tabpanel" aria-labelledby="things-tab" tabindex="0">
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Phoenix</p>
-                            <p>Villa rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Hot Springs</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Los Angeles</p>
-                            <p>Cottage rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">San Diego</p>
-                            <p>Rentals with pools</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">San Francisco</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Barcelona</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Prague</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Washington</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Keswick</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">London</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Scarborough</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Sherwood Forest</p>
-                            <p>Cabin rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">York</p>
-                            <p>Apartment rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Paris</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Rhodes</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Nashville</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Dublin</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Florence</p>
-                            <p>Apartment rentals</p>
+                    <div class="tab-pane fade" id="mountains-tab-pane" role="tabpanel" aria-labelledby="mountains-tab" tabindex="0">
+                        <div class=" row d-flex flex-wrap gy-4">   
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Canmore</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Benalmádena</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Marbella</p>
+                                <p>Villa rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Mijas</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Prescott</p>
+                                <p>Cabin rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Scottsdale</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Tucson</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Jasper</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Mountain View</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Devonport</p>
+                                <p>Cottage rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Mallacoota</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Ibiza</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Anaheim</p>
+                                <p>Family-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Monterey</p>
+                                <p>Bungalow rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Paso Robles</p>
+                                <p>Cottage rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Santa Barbara</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Sonoma</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">La Serena</p>
+                                <p>Vacation rentals</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade row d-flex flex-wrap gy-4" id="friendly-tab-pane" role="tabpanel" aria-labelledby="friendly-tab" tabindex="0">
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Lake Martin</p>
-                            <p>Vacation rentals</p>
+                    <div class="tab-pane fade" id="beach-tab-pane" role="tabpanel" aria-labelledby="beach-tab" tabindex="0">
+                        <div class="row d-flex flex-wrap gy-4">   
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Phoenix</p>
+                                <p>Villa rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Hot Springs</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Los Angeles</p>
+                                <p>Cottage rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">San Diego</p>
+                                <p>Rentals with pools</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">San Francisco</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Barcelona</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Prague</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Washington</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Keswick</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">London</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Scarborough</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Sherwood Forest</p>
+                                <p>Cabin rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">York</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Paris</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Rhodes</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Nashville</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Dublin</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Florence</p>
+                                <p>Apartment rentals</p>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Banff</p>
-                            <p>Vacation rentals</p>
+                    </div>
+                    <div class="tab-pane fade" id="unique-tab-pane" role="tabpanel" aria-labelledby="unique-tab" tabindex="0">
+                        <div class="row d-flex flex-wrap gy-4">   
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Lake Martin</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Banff</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Nerja</p>
+                                <p>Beach house rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Greer</p>
+                                <p>Cabin rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Lake Havasu City</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Lake Powell</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">North Rim</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Payson</p>
+                                <p>Cabin rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Pinetop-Lakeside</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Red Rock</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Dinner Plain</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Streaky Bay</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Emerald Lake</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Vancouver Island</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Victoria</p>
+                                <p>Beach house rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Idyllwild-Pine Cove</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Mammoth Lakes</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Palm Desert</p>
+                                <p>Villa rentals</p>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Nerja</p>
-                            <p>Beach house rentals</p>
+                    </div>
+                    <div class="tab-pane fade" id="categories-tab-pane" role="tabpanel" aria-labelledby="categories-tab" tabindex="0">
+                        <div class="row d-flex flex-wrap gy-4">
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Canmore</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Benalmádena</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Marbella</p>
+                                <p>Villa rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Mijas</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Prescott</p>
+                                <p>Cabin rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Scottsdale</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Tucson</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Jasper</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Mountain View</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Devonport</p>
+                                <p>Cottage rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Mallacoota</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Ibiza</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Anaheim</p>
+                                <p>Family-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Monterey</p>
+                                <p>Bungalow rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Paso Robles</p>
+                                <p>Cottage rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Santa Barbara</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Sonoma</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">La Serena</p>
+                                <p>Vacation rentals</p>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Greer</p>
-                            <p>Cabin rentals</p>
+                    </div>
+                    <div class="tab-pane fade" id="things-tab-pane" role="tabpanel" aria-labelledby="things-tab" tabindex="0">
+                        <div class="row d-flex flex-wrap gy-4">    
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Phoenix</p>
+                                <p>Villa rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Hot Springs</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Los Angeles</p>
+                                <p>Cottage rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">San Diego</p>
+                                <p>Rentals with pools</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">San Francisco</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Barcelona</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Prague</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Washington</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Keswick</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">London</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Scarborough</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Sherwood Forest</p>
+                                <p>Cabin rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">York</p>
+                                <p>Apartment rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Paris</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Rhodes</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Nashville</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Dublin</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Florence</p>
+                                <p>Apartment rentals</p>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Lake Havasu City</p>
-                            <p>Condo rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Lake Powell</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">North Rim</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Payson</p>
-                            <p>Cabin rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Pinetop-Lakeside</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Red Rock</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Dinner Plain</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Streaky Bay</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Emerald Lake</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Vancouver Island</p>
-                            <p>Pet-friendly rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Victoria</p>
-                            <p>Beach house rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Idyllwild-Pine Cove</p>
-                            <p>House rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Mammoth Lakes</p>
-                            <p>Vacation rentals</p>
-                        </div>
-                        <div class="col-md-2">
-                            <p class="text-black fw-semibold">Palm Desert</p>
-                            <p>Villa rentals</p>
+                    </div>
+                    <div class="tab-pane fade" id="friendly-tab-pane" role="tabpanel" aria-labelledby="friendly-tab" tabindex="0">
+                        <div class="row d-flex flex-wrap gy-4">   
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Lake Martin</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Banff</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Nerja</p>
+                                <p>Beach house rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Greer</p>
+                                <p>Cabin rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Lake Havasu City</p>
+                                <p>Condo rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Lake Powell</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">North Rim</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Payson</p>
+                                <p>Cabin rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Pinetop-Lakeside</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Red Rock</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Dinner Plain</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Streaky Bay</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Emerald Lake</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Vancouver Island</p>
+                                <p>Pet-friendly rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Victoria</p>
+                                <p>Beach house rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Idyllwild-Pine Cove</p>
+                                <p>House rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Mammoth Lakes</p>
+                                <p>Vacation rentals</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-black fw-semibold">Palm Desert</p>
+                                <p>Villa rentals</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <hr class="m-4">
+            <hr>
 
             <!-- LINK SUPPORT -->
             <div class="row d-flex justify-content-between py-4" id="link_footer">
-                <div class="col d-flex flex-column gap-2">
+                <div class="col-12 col-md-4 py-2 d-flex flex-column gap-2">
                     <p class="text-black fw-semibold">Support</p>
                     <a href="#">Help Center</a>
                     <a href="#">AirCover</a>
@@ -793,7 +814,7 @@
                     <a href="#">Report neighborhood concern</a>
                 </div>
 
-                <div class="col d-flex flex-column gap-2">
+                <div class="col-12 col-md-4 py-2 d-flex flex-column gap-2">
                     <p class="text-black fw-semibold">Hosting</p>
                     <a href="#">Airbnb your home</a>
                     <a href="#">AirCover for Hosts</a>
@@ -803,7 +824,7 @@
                     <a href="#">Airbnb-friendly apartments</a>
                 </div>
 
-                <div class="col d-flex flex-column gap-2">
+                <div class="col-12 col-md-4 py-2 d-flex flex-column gap-2">
                     <p class="text-black fw-semibold">Airbnb</p>
                     <a href="#">Newsroom</a>
                     <a href="#">New features</a>
@@ -821,21 +842,23 @@
 
             <!-- BOTTOM -->
             <div class="row d-flex py-4 align-middle" id="bottom_footer">
-                <div class="col d-flex align-items-center gap-2">
+                <div class="col col-md-6 d-flex gap-2" id="terms_sm">
                     <p>© 2024 Airbnb, Inc.</p>
-                    <p>•</p>
-                    <a href="#">Terms</a>
-                    <p>•</p>
-                    <a href="#">Sitemap</a>
-                    <p>•</p>
-                    <a href="#">Privacy</a>
-                    <p>•</p>
-                    <a href="#">Your Privacy Choices</a>
+                    <div class="d-flex align-items-center gap-2">
+                        <p>•</p>
+                        <a href="#">Terms</a>
+                        <p>•</p>
+                        <a href="#">Sitemap</a>
+                        <p>•</p>
+                        <a href="#">Privacy</a>
+                        <p>•</p>
+                        <a href="#">Your Privacy Choices</a>
+                    </div>
                 </div>
 
-                <div class="col d-flex align-items-center justify-content-end gap-3">
+                <div class="col col-md-6 d-flex align-items-center gap-3" id="language_sm">
                     <div class="d-flex">
-                        <a href="#" class="d-flex align-items-center gap-2 text-black fw-semibold">
+                        <a href="#" class="d-flex gap-2 text-black fw-semibold">
                             <i class="fa-solid fa-globe"></i>
                             English (US)
                         </a>
@@ -845,7 +868,7 @@
                             € EUR
                         </a>
                     </div>
-                    <div class="d-flex align-items-center gap-3 text-black">
+                    <div class="d-flex align-items-center gap-3 text-black" id="social">
                         <i class="fa-brands fa-square-facebook"></i>
                         <i class="fa-brands fa-square-twitter"></i>
                         <i class="fa-brands fa-square-instagram"></i>
