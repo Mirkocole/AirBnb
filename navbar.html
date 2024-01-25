@@ -13,37 +13,32 @@
 
 <body>
 
-
-    <div class="container-fluid m-0 p-0">
+    <!-- Navbar desktop & Tablet -->
+    <div class="container-fluid m-0 p-0 d-none d-md-block">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid d-flex justify-content-center ">
-                <a class="navbar-brand col col-lg-4 d-flex align-items-center justify-content-center" href="#">
+            <div class="container-fluid d-flex justify-content-center px-5 position-relative">
+                <a class="navbar-brand col col-md-4 col-lg-2 d-flex align-items-center justify-content-start" href="#">
                     <img src="assets/logo-pink.png" alt="logo-airbnb" id="logo-airbnb" >
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse col-auto col-lg-4" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mx-lg-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                <div class=" d-none d-md-flex col-auto col-md-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mx-lg-auto mb-2 mb-lg-0 flex-row">
+                        <li class="nav-item me-1">
                             <a class="nav-link active" aria-current="page" href="#">Soggiorni</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-1">
                             <a class="nav-link" href="#">Esperienze</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link" href="#">Esperienze Online</a>
                         </li>
 
                     </ul>
                 </div>
-                <div class="d-none d-lg-flex col col-lg-4 align-items-center justify-content-end" role="search">
-                    <div class="row w-100 justify-content-center g-4 align-items-center">
-                        <span class="col-auto p-0">Affitta con Airbnb</span>
-                        <i class="fa-solid fa-globe col-auto"></i>
-                        <div class="col-auto d-flex justify-content-evenly py-3 btn dropdown dropdown-toggle flex-nowrap" id="user-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="d-none d-md-flex col flex-row col-md-auto align-items-center justify-content-end" role="search">
+                    <div class="row w-100 justify-content-center g-0 align-items-center">
+                        <span class="col-auto p-0 mx-2">Affitta con Airbnb</span>
+                        <i class="fa-solid fa-globe col-auto mx-2"></i>
+                        <div class="col-auto d-flex justify-content-evenly py-3 btn dropdown dropdown-toggle flex-nowrap mx-2" id="user-menu" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-bars col-auto mx-2"></i>
                             <i class="fa-solid fa-circle-user col-auto mx-2"></i>
                             <ul class="dropdown-menu dropdown-menu-end">
@@ -55,11 +50,62 @@
                     </div>
                 </div>
             </div>
+
         </nav>
+        <div class="container d-flex  justify-content-center" id="nav-search">
+            <div class="row w-auto border rounded-pill p-2">
+                <div class="col py-2 px-3">
+                    <label for="" class="form-label ps-0 m-0">Dove</label>
+                    <input type="text" class="form-control m-0 px-0 py-0" id="dove-input" placeholder="Cerca destinazioni">
+                </div>
+                <div class="col-auto py-2 px-3">
+                    <label for="" class="form-label ps-0 m-0">Check-in</label>
+                    <input type="date" class="form-control m-0 px-0 py-0" id="check-in-input" placeholder="Aggiungi date">
+                </div>
+                <div class="col-auto py-2 px-3">
+                    <label for="" class="form-label ps-0 m-0">Check-out</label>
+                    <input type="date" class="form-control m-0 px-0 py-0" id="check-out-input" placeholder="Aggiungi date">
+                </div>
+                <div class="col py-2 px-3">
+                    <label for="" class="form-label ps-0 m-0">Chi</label>
+                    <input type="text" class="form-control m-0 px-0 py-0" id="dove-input" placeholder="2 ospiti">
+                </div>
+            </div>
+        </div>
     </div>
 
 
-
+    <!-- Navbar Mobile -->
+    <div class="container-fluid position-absolute bottom-0 border d-md-none p-0">
+        <nav class="navbar navbar-expand p-0">
+            <div class="container-fluid">
+              <div class="container">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
 
 
 
