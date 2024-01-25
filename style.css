@@ -16,6 +16,56 @@ nav {
     border-bottom: 1px solid lightgray;
 }
 
+@media screen and (max-width: 743px) {
+    section .container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    section .left-item {
+        position: static !important;
+        order: 2;
+        margin: auto;
+        width: fit-content !important;
+        margin-top: 20px;
+    }
+
+
+    section .right-item img {
+        object-fit: cover;
+        order: 1 !important;
+        margin: auto !important;
+    }
+
+    main .row.cards {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    main .houses {
+        max-width: 320px !important;
+        overflow: scroll !important;
+    }
+
+}
+
+@media screen and (max-width: 1127px) {
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .container div:first-child {
+        order: 1;
+        padding: 5px 5px 0 0;
+    }
+
+    footer .container span {
+        order: 2;
+        padding: 5px 5px 0 0;
+
+    }
+}
+
 section {
     min-height: 600px;
 }
@@ -28,8 +78,7 @@ section .container .right-item img {
     width: 700px;
     height: 480px;
     border-radius: 5%;
-    position: absolute;
-    right: 23%;
+    margin-right: 18%;
 }
 
 section .container .left-item {
@@ -170,4 +219,18 @@ span:nth-child(3) {
 .container .row .last-sec span:last-child {
     font-size: 15px;
     padding: 5px;
+}
+
+footer {
+    background-color: #F7F7F7;
+    border-top: 1px solid lightgray;
+}
+
+footer .container div:first-child,
+span {
+    font-size: 14px;
+}
+
+footer .container div:last-child {
+    font-size: 20px;
 }
