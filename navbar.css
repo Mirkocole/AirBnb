@@ -1,0 +1,33 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+#logo-airbnb{
+    width: 118px;
+}
+
+#user-menu{
+    border-radius: 40px;
+    border: solid 1px rgb(192, 192, 192);
+    
+}
+
+#user-menu:hover{
+    box-shadow: rgb(192, 192, 192) 0px 3px 7px;
+   border-color: transparent;
+}
+
+.dropdown-toggle::after{
+    display: none!important;
+}
+
+@media (max-width:575px){
+    #logo-airbnb{
+        width: 30px;
+        height: 50px;
+        object-fit:cover;
+        object-position: 0%;
+    }
+}
