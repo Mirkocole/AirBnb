@@ -58,3 +58,21 @@
         margin: 0 16px;
     }
 }
+
+.testo-nav-mobile{
+    font-size: 10px;
+}
+
+#menu-mobile i{
+    font-size: 20px;
+    color: rgb(168, 168, 168);
+}
+#menu-mobile a.active i{
+    color: rgb(238, 5, 5)!important;
+}
+
+
+
+#menu-mobile a{
+    padding-bottom: 0%!important;
+}

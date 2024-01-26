@@ -79,16 +79,19 @@
     <div class="container-fluid position-absolute bottom-0 border d-md-none p-0">
         <nav class="navbar navbar-expand p-0">
             <div class="container-fluid">
-              <div class="container">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <div class="container" id="menu-mobile">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex justify-content-evenly">
+                  <li class="nav-item d-flex flex-column align-items-center">
+                    <a class="nav-link active text-danger" aria-current="page" href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <span class="testo-nav-mobile text-danger">Esplora</span>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item d-flex flex-column align-items-center">
                     <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i></a>
+                    <span class="testo-nav-mobile fw-lighter">Preferiti</span>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item d-flex flex-column align-items-center">
                     <a class="nav-link" href="#"><i class="fa-regular fa-circle-user"></i></a>
+                    <span class="testo-nav-mobile fw-lighter">Accedi</span>
                   </li>
                 </ul>
               </div>
