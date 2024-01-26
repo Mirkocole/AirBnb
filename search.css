@@ -227,3 +227,7 @@ div.modal-body button{
     top: 15px!important;
     right: 15px!important;
 }
+
+ul.z-3{
+    font-size: 11px;
+}
