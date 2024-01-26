@@ -215,11 +215,11 @@ div.modal-body button{
 }
 
 
+#myTab{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
 @media (max-width: 576px){
-    #myTab{
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-    }
 
     #footer_container,
     #content_navbar{
