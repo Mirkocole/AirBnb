@@ -206,7 +206,7 @@ div.modal-body button{
 
 /* RESPONSIVE PHONE */
 
-#show_more{
+#btn_show_more{
     background: none;
     border: none;
     font-size: 12px;
@@ -219,7 +219,21 @@ div.modal-body button{
     flex-wrap: nowrap;
     overflow-x: scroll;
 }
+
+#show_more{
+    display: none;
+}
+
 @media (max-width: 576px){
+
+    #show_more{
+        display: block;
+    }
+    
+    #show_more ~ div{
+        display: none;
+    }
+
 
     #footer_container,
     #content_navbar{
@@ -256,4 +270,12 @@ div.modal-body button{
     #terms_sm{
         flex-direction: column;
     }
+}
+
+#show_more ~ div.show{
+    display: block;
+}
+
+#show_more.hide{
+    display: none;
 }

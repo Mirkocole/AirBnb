@@ -281,3 +281,27 @@ if (rooms[i].highlight !== '') {
 }
 
 }
+
+
+// SHOW MORE BUTTON
+
+let hiddenContent = document.querySelectorAll("#show_more~div");
+
+for (const element of hiddenContent) {
+    console.log(element);
+}
+
+// console.log(hiddenContent);
+
+let showContent = document.getElementById("show_more");
+
+showContent.addEventListener("click", () => {
+    hiddenContent.forEach(element => {
+        // element.style.display="block";
+        element.classList.add("show");
+        
+    });
+
+    let btnShow = document.getElementById("show_more");
+    btnShow.classList.add("hide");
+})
