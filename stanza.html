@@ -45,15 +45,15 @@
     </nav>
     <!--  HomeSection -->
     <div class="schermo container-fluid d-flex align-items-center d-none d-md-flex">
-        <div class="row gx-2">
+        <div class="row g-2 box-img">
             <h3 class="col-12 m-0 p-0 fw-bold">Blamor home</h3>
             <span class="col-12 pb-2"><b>4.6</b> rating - invernes</span>
             <div class="row image  ">
-                <div class="col-md-6">
+                <div class="col-md-6 pe-0">
                     <img class="img-home " src="/assets/1.webp" alt="home-pic-1">
                 </div>
                 <div class="col-md-6 ">
-                    <div class="row g-3">
+                    <div class="row g-2">
                         <div class="col-6">
                             <img class="img-home-split " src="/assets/2.webp" alt="">
                         </div>
@@ -76,7 +76,7 @@
     <div class="container-fluid schermo">
         <div class="row py-5">
             <!-- LeftSection -->
-            <div class="col-7 d-flex flex-column justify-content-start align-items-start">
+            <div class="col-lg-8 col-md-7 col d-flex flex-column justify-content-start align-items-start">
                 <div class="H ">
                     <h4 class="fw-bold ">House - Host: Erica </h4>
                     <p class="opacity-50 fs-6 ">3 rooms - Perfect to visit the Loch Ness and go looking for Nessie.</p>
@@ -121,13 +121,13 @@
                 </div>
             </div>
             <!-- RightSection -->
-            <div class="col-5 insertDate mt-5 p-2">
+            <div class="col-lg-4 col-md-6  col insertDate mt-5 p-2">
                 <div class=" shadow p-3 mb-5 bg-body rounded">
                     <div class="heading row">
-                        <div class="col-6">
+                        <div class="col-lg-6 col">
                             <h5 class="">Add dates to see the prices</h5>
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg-6 col">
                             <i class="fa-solid fa-star px-2  fa-sm" style="color:#FF385C;"></i>
                             <span class=" fs-6">4.0, 6 rewievs</span>
                         </div>
@@ -136,30 +136,29 @@
                     <div class="row p-3">
                         <input type="date" class="col-6" id="date1">
                         <input type="date" class="col-6" id="date2">
-                        <input type="text" placeholder="Guest" class="rounded-bottom">
+                        <input type="text" placeholder="Guest" class="rounded-bottom" id="date3">
                         <button class="btn rosa mt-2 text-white fw-bold " type="button">Cancel Booking</button>
                     </div>
                 </div>
 
             </div>
         </div>
-
+        <!--  formSection -->
         <form>
             <div class="row">
-                <div class="form-group col-8">
+                <div class="form-group col-lg-8 col">
                     <label for="exampleFormControlInput1">Name</label>
                     <input type="name" class="form-control" id="exampleFormControlInput1">
                 </div>
-                <div class="form-group col-4 d-flex flex-column ">
+                <div class="form-group col-lg-4 col d-flex flex-column ">
                     <label for="exampleFormControlSelect1">Rating</label>
-                    <select class="border ">
+                    <select class="rating border rounded">
                         <option> &#9733;</option>
                         <option> &#9733; &#9733; </option>
                         <option> &#9733; &#9733; &#9733; </option>
                         <option> &#9733; &#9733; &#9733; &#9733;</option>
                         <option> &#9733; &#9733; &#9733; &#9733; &#9733;</option>
-                        <option> &#9733; &#9733; &#9733; &#9733; &#9733;&#9733;</option>
-                        <option> &#9733; &#9733; &#9733; &#9733; &#9733;&#9733;&#9733;</option>
+          
                     </select>
                 </div>
                 <div class="form-group">
@@ -168,10 +167,38 @@
                         placeholder="Type in your rewiew"></textarea>
                 </div>
         </form>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        <!-- Rewiue -->
+        <div class="row mt-5">
+            <div class="col-lg-6 col ">
+                    <div class="info d-flex flex-row align-items-center">
+                        <img class="User-icon-rew m-2" src="/assets/propic.png" alt="Avatar-1">
+                        <div class="d-flex flex-column">
+                            <p class=" m-0 fw-bold">Noemi</p>
+                            <p class="opacity-50 ">Jan 2021</p>
+                        </div>
+                    </div>
+                    <p>Contrary to ohter reviwes, I was cold and couldn't figure out how to turn on the
+                        heating...Otherwise
+                        amazing house.</p>
+                </div>
+                <div class="col-lg-6 col">
+                        <div class="info d-flex flex-row align-items-center">
+                            <img class="User-icon-rew m-2" src="/assets/propic.png" alt="Avatar-1">
+                            <div class="d-flex flex-column">
+                                <p class=" m-0 fw-bold">Noemi</p>
+                                <p class="opacity-50 ">Jan 2021</p>
+                            </div>
+                        </div>
+                        <p>Contrary to ohter reviwes, I was cold and couldn't figure out how to turn on the
+                            heating...Otherwise
+                            amazing house.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
