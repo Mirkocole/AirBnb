@@ -285,7 +285,7 @@ if (rooms[i].highlight !== '') {
 
 // SHOW MORE BUTTON
 
-let hiddenContent = document.querySelectorAll("#show_more~div");
+let hiddenContent = document.querySelectorAll("#show_more~div, #show_more2~div, #show_more3~div,#show_more4~div, #show_more5~div, #show_more6~div, #show_more7~div, #show_more8~div, #show_more9~div");
 
 for (const element of hiddenContent) {
     console.log(element);
@@ -293,15 +293,31 @@ for (const element of hiddenContent) {
 
 // console.log(hiddenContent);
 
-let showContent = document.getElementById("show_more");
+let showContent = document.querySelectorAll("#show_more, #show_more2, #show_more3, #show_more4, #show_more5, #show_more6, #show_more7, #show_more8, #show_more9");
 
-showContent.addEventListener("click", () => {
-    hiddenContent.forEach(element => {
-        // element.style.display="block";
-        element.classList.add("show");
+showContent.forEach(element => {
+    element.addEventListener("click", () => {
+        hiddenContent.forEach(element => {
+            element.classList.add("show");
+        });
         
-    });
+        // let btnShow = document.querySelectorAll("show_more, show_more2, show_more3, show_more4, show_more5, show_more6, show_more7, show_more8, show_more9");
+        
+        showContent.forEach(element => {
+            element.classList.add("hide");
+        });
+        
+    })
 
-    let btnShow = document.getElementById("show_more");
-    btnShow.classList.add("hide");
-})
+});
+
+
+// showContent.addEventListener("click", () => {
+//     hiddenContent.forEach(element => {
+//         element.classList.add("show");
+        
+//     });
+
+//     let btnShow = document.getElementById("show_more");
+//     btnShow.classList.add("hide");
+// })
