@@ -415,3 +415,7 @@ ul.z-3{
 #show_more9.hide{
     display: none;
 }
+
+div.carousel-inner:hover{
+    cursor: pointer;
+}

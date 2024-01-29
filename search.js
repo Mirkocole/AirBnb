@@ -230,7 +230,8 @@ for (let i = 0;i<rooms.length;i++) {
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner rounded position-relative">
+        <div class="carousel-inner rounded position-relative" onclick="window.location.replace('/stanza.html')">
+        
             <div class="row justify-content-between">
                 <div class="col highlight-card"></div>
                 <div class="col d-flex justify-content-end">
@@ -247,6 +248,7 @@ for (let i = 0;i<rooms.length;i++) {
             <div class="carousel-item">
                 <img src="${rooms[i].urlImages[2]}" class="d-block w-100" alt="...">
             </div>
+        
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel${i}" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
